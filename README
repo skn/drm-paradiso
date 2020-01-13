@@ -1,0 +1,40 @@
+DRM Paradiso is a unique Digitial Rights Management (DRM) system 
+which allows customers who buy music (or other digital content) 
+from an online distribution store to also buy rights to resell 
+the song to his friends in a controlled manner!
+
+Research related to this was carried out as part of Ph.D. work of
+Srijith Nair (https://srijith.net) at Vrije Universiteit, Amsterdam.
+
+The source code included here was used to implement a working
+prototype of the DRM scheme on a Neuros OSD Board.
+
+More details are available at https://srijith.net/vu/paradiso/
+
+Academic articles published related to this work:
+
+[1] Mohammad T. Dashti, Srijith K. Nair and Hugo L. Jonker
+"Nuovo DRM Paradiso:Designing a Secure, Verified Fair DRM Scheme"
+Fundamentae Informatica (FI), IOS Press, 89, pp. 1--25, 2008
+
+[2] Srijith K. Nair, Ron Gerrits, Bruno Crispo, Andrew S. Tanenbaum
+"Turning Teenagers into Stores", IEEE Computer, vol. 41, no. 2, 
+pp. 58-62, Feb., 2008
+
+[3] Mohammad T. Dashti, Srijith K. Nair, Hugo L. Jonker, 
+"Nuovo DRM Paradiso: Towards a Verified Fair DRM Scheme"
+Proceedings of IPM International Symposium on Fundamentals of Software 
+Engineering (FSEN07), pp. 33-48, April 17-19 2007, Tehran, Iran.
+
+[4] Hugo Jonker, Srijith Krishnan Nair, Mohammad Torabi Dashti,
+"Nuovo DRM Paradiso: towards a verified fair DRM protocol", 
+1st Benelux Workshop on Information and System Security (WISSEC2006),
+November 8-9, 2006, Antwerpen, Belgium. 
+
+[5] Nuovo DRM Paradiso: Formal specification and verification of a DRM protocol 
+H. Jonker, S. Krishnan Nair and M. Torabi Dashti
+Technical Report IR-CS-019, Vrije Universiteit, March 2006.
+
+[6] Srijith K. Nair, Bogdan C. Popescu, Chandana Gamage, Bruno Cripso, 
+Andrew S. Tanenbaum, "Enabling DRM-preserving Digital Content Redistribution"
+Proceedings of 7th International IEEE Conference on E-Commerce Technology 2005 

@@ -1,0 +1,49 @@
+    Paradiso DRM
+    ---------------
+    
+    This package contains all the files needed to build:
+        
+    - the commandline utility
+    - a paradiso DRM provider
+    - a paradiso DRM customer/reseller
+    
+    Building
+    ---------------
+    The dependencies of the Makefile are broken at this moment,
+    so in order to recompile the code after you made some changes
+    please always type 'make clean' before building the program.
+    
+    Build the customer/reseller version of the program as follows:
+        
+        make clean
+        make paradiso
+        
+    You can build the provider version with:
+        
+        make clean
+        make PROVIDER=1 paradiso
+        
+    Create the commandline with the following method:
+        
+        make clean
+        make commandline
+        
+    You can also build the commandline and paradiso program at once:
+        
+        make clean
+        make all
+        
+    Installing
+    ---------------
+    In order to start using the Paradiso DRM some keys and signatures
+    should be created. The directory needed by Paradiso DRM should also
+    be created. Issue the following command to create a directory called
+    data containing all the neccessary files:
+        
+        make install
+        
+    Uninstalling is also possible and is accomplished with:
+        
+        make uninstall
+        
+        

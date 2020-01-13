@@ -1,0 +1,57 @@
+Copyright (c) 2006, Vrije Universiteit, Amsterdam
+All rights reserved.
+
+This is the source code distribution of the DRM Paradiso system.
+
+Please read the file INSTALL for installation details.
+Please read the file LICENSE for details of the license (BSD) that this code is released under.
+
+
+Implementation
+--------------
+The code implements the Paradiso service provider as well as the Paradiso consumer/reseller. 
+Even though the consumer and the provider code compiles on a normal machine, the consumer has been 
+tested working only on the Neuros OSD developer board (http://wiki.neurostechnology.com/index.php/OSD_Beta).
+Your milage may vary if you try to get the system working on normal laptops/desktops.
+
+The setup involves a provider (see INSTALL on how to compile a provider) implemented on a normal machine. 
+The customer/reseller is implemented on two Neuros OS developer boards. Since the board does not come with 
+a screen, in order to run the consumer. we telnet into the consumerss from a different machine.
+
+To run the provide:
+make clean
+make PROVIDER=1 paradiso
+make install
+./paradiso <name of provider>
+./commandline (In another window)
+
+To run the customer/reseller:
+make clean
+make paradiso
+make install
+./paradiso <name of consumer device>
+./commandline <ip address of OSD board>
+
+
+Wireless Support
+----------------
+Asus WL-167G wireless dongle was used on the Neuros board to provide wireless support to the board. The 
+RT2570 Ralink serialmonkey driver for the dongle was modified to work on the ARM architecture of the board. 
+We plan on releasing the modified code under the same license as the original driver. Please check the Download 
+section at a later date. Due to some limitations in the wireless driver support, which we hope to fix soon, the 
+ad-hoc setup doesn't work well. Hence for this prototype demo we setup the Neuros boards in infrastructure mode 
+using an external base station.
+
+Trusted Hardware
+----------------
+Neuros board does not come with a trusted hardware, so we have emulated the trusted storage on the software. 
+Similarly, there is no support for direct decryption on the fly of digital content when it is being used (played).
+So, in order to use the purchased content, it is temporarly decrypted and then played. In a proper implementation 
+the decryption is done within the video card itself or if not, the connection between the decryption module and 
+the video card would itself be encrypted.
+
+
+Versions
+-------
+0.1 (14th Nov. 2006)
++ The initial push-out release of prototype
